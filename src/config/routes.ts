@@ -1,5 +1,5 @@
 import IRoute from "../interfaces/route.interface";
-import SignUpPage from "../pages/auth/SignUp";
+import SignUpPage from "../pages/auth/SignUpPage";
 import CartPage from "../pages/CartPage";
 import HomePage from "../pages/HomePage";
 
