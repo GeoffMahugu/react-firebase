@@ -1,10 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import IPageProps from '../interfaces/page.interface';
 
 const HomePage: React.FunctionComponent<IPageProps> = props => {
     return (
         <div>
-            Home Page - Unprotected
+            <h1> Home Page - Unprotected</h1>
+            <Link to={`/cart`}>
+                <button>View Cart</button>
+            </Link>
+            <Link to={`/auth/signup`}>
+                <button>SignUp</button>
+            </Link>
         </div>
     );
 }
