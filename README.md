@@ -4,7 +4,8 @@ This is a React-Typescript application implementing firebase Authentification.
 
 The full write up on how to setup the project can be found in this Blog Post:  **[Firebase Auth with React Typescript](https://javascript.plainenglish.io/firebase-auth-with-react-typescript-4b9d9605fa53)**
 
-![Screenshot from 2021-05-20 17-16-45](https://user-images.githubusercontent.com/17265995/119225544-0a7f0e80-bb0d-11eb-8696-3b81db2e93c9.png)
+![firebase-react-ts (1)](https://user-images.githubusercontent.com/17265995/119226179-7b73f580-bb10-11eb-9cd2-72c56a70c63a.png)
+
 
 ### Project Structure
 
@@ -28,6 +29,9 @@ The full write up on how to setup the project can be found in this Blog Post:  *
 This command will serve the application
 
 ``npm start``
+
+![Screenshot from 2021-05-20 17-16-45](https://user-images.githubusercontent.com/17265995/119225544-0a7f0e80-bb0d-11eb-8696-3b81db2e93c9.png)
+
 
 ### Build application
 
