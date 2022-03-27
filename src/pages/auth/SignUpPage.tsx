@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom';
-import firebase from 'firebase';
+import { Link, useNavigate } from 'react-router-dom';
+import firebase from 'firebase/compat/app';
 
 import IPageProps from '../../interfaces/page.interface';
 import { SignInWithSocialMedia } from '../../modules/auth';
@@ -9,7 +9,7 @@ import { Providers } from '../../config/firebase';
 const SignUpPage: React.FunctionComponent<IPageProps> = props => {
     const [authenticating, setAuthenticating] = useState<boolean>(false);
     const [error, setError] = useState<string>('');
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const signInWithSocialMedia = (provider: firebase.auth.AuthProvider) => {
         if (error !== '') setError('');
@@ -18,7 +18,7 @@ const SignUpPage: React.FunctionComponent<IPageProps> = props => {
 
         SignInWithSocialMedia(provider)
             .then(result => {
-                history.push('/');
+                navigate('/');
             })
             .catch(error => {
                 setAuthenticating(false);
